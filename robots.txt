@@ -1,0 +1,13 @@
+# robots.txt for Prashant Cooks
+# https://yourusername.github.io/prashant-cooks-web/
+
+User-agent: *
+Allow: /
+
+# Sitemap location (update with your actual GitHub Pages URL)
+Sitemap: https://yourusername.github.io/prashant-cooks-web/sitemap.xml
+
+# Disallow admin or private areas if any
+# Disallow: /admin/
+# Disallow: /private/
+

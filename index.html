@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Prashant Cooks - Delicious recipes from Nepal and around the world. Easy-to-follow cooking instructions for home chefs.">
+    <meta name="keywords" content="recipes, cooking, Nepali food, food blog, cooking instructions">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/prashant-cooks-web/">
+    <meta property="og:title" content="Prashant Cooks - Delicious Recipes">
+    <meta property="og:description" content="Delicious recipes from Nepal and around the world">
+    <meta property="og:image" content="https://yourusername.github.io/prashant-cooks-web/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourusername.github.io/prashant-cooks-web/">
+    <meta property="twitter:title" content="Prashant Cooks - Delicious Recipes">
+    <meta property="twitter:description" content="Delicious recipes from Nepal and around the world">
+    <meta property="twitter:image"
+        content="https://yourusername.github.io/prashant-cooks-web/assets/images/og-image.jpg">
+
+    <title>Prashant Cooks - Delicious Recipes from Nepal and Around the World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/images/lg-prashant-cooks.png">
+    <link rel="apple-touch-icon" href="/assets/images/lg-prashant-cooks.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="/assets/images/lg-prashant-cooks.png" alt="Prashant Cooks Logo">
+                <span>Prashant Cooks</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu"><span
+                    class="material-icons">menu</span></button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/recipes.html">Recipes</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Prashant Cooks</h1>
+            <p>Discover delicious recipes from Nepal and around the world. Simple, authentic, and easy to follow.</p>
+            <a href="/recipes.html" class="btn btn-primary" style="display: inline-block; margin-top: 1rem;">Explore
+                Recipes</a>
+        </section>
+
+        <section class="container">
+            <div class="section-header">
+                <h2>Featured Recipes</h2>
+                <p>Discover our most popular and delicious recipes</p>
+            </div>
+            <div class="recipes-grid" id="featured-recipes">
+                <div class="loading">Loading recipes...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Prashant Cooks</h3>
+            <p>Sharing the joy of cooking, one recipe at a time.</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@PrashantCooksNP" aria-label="YouTube" target="_blank"
+                    rel="noopener"><span class="material-icons">play_circle</span></a>
+                <a href="https://www.instagram.com/prashantcooksnp/" aria-label="Instagram" target="_blank"
+                    rel="noopener"><span class="material-icons">photo_camera</span></a>
+                <a href="https://www.facebook.com/61583819619360" aria-label="Facebook" target="_blank"
+                    rel="noopener"><span class="material-icons">facebook</span></a>
+                <a href="https://www.tiktok.com/@prashantcooks" aria-label="TikTok" target="_blank" rel="noopener"><span
+                        class="material-icons">music_note</span></a>
+            </div>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/recipes.html">Recipes</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Prashant Cooks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        // Load featured recipes on homepage
+        async function loadFeaturedRecipes() {
+            try {
+                const response = await fetch('/data/recipes.json');
+                const data = await response.json();
+                const recipes = data.recipes || [];
+                const featured = recipes.slice(0, 6); // Show first 6 recipes
+
+                const grid = document.getElementById('featured-recipes');
+                if (!grid) return;
+
+                if (featured.length === 0) {
+                    grid.innerHTML = `
+            <div class="empty-state" style="grid-column: 1 / -1;">
+              <span class="material-icons">restaurant_menu</span>
+              <h3>No recipes available yet</h3>
+              <p>Check back soon for delicious recipes!</p>
+            </div>
+          `;
+                    return;
+                }
+
+                grid.innerHTML = featured.map(recipe => `
+          <article class="recipe-card" onclick="window.location.href='/recipe.html?id=${recipe.id}'">
+            <div class="recipe-card-image-wrapper">
+              <img 
+                src="/assets/images/${recipe.image}" 
+                alt="${recipe.title}"
+                class="recipe-card-image"
+                data-src="/assets/images/${recipe.image}"
+                loading="lazy"
+                onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\'%3E%3Crect fill=\'%23ddd\' width=\'400\' height=\'200\'/%3E%3Ctext fill=\'%23999\' font-family=\'sans-serif\' font-size=\'18\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3E${encodeURIComponent(recipe.title)}%3C/text%3E%3C/svg%3E'"
+              >
+            </div>
+            <div class="recipe-card-content">
+              <h3 class="recipe-card-title">${escapeHtml(recipe.title)}</h3>
+              <div class="recipe-card-meta">
+                <span><span class="material-icons" style="font-size: 1rem; vertical-align: middle;">schedule</span> ${recipe.time}</span>
+                <span><span class="material-icons" style="font-size: 1rem; vertical-align: middle;">assessment</span> ${recipe.difficulty}</span>
+              </div>
+              <p class="recipe-card-description">${escapeHtml(recipe.description || '')}</p>
+              <div class="recipe-card-categories">
+                ${recipe.category.map(cat => `<span class="category-tag">${escapeHtml(cat)}</span>`).join('')}
+              </div>
+            </div>
+          </article>
+        `).join('');
+
+                // Re-initialize lazy loading
+                if (window.PrashantCooks && window.PrashantCooks.utils) {
+                    window.PrashantCooks.utils.initLazyLoading();
+                }
+            } catch (error) {
+                console.error('Error loading featured recipes:', error);
+                document.getElementById('featured-recipes').innerHTML =
+                    '<div class="error-message"><span class="material-icons" style="vertical-align: middle; margin-right: 0.5rem;">error_outline</span>Failed to load recipes. Please try again later.</div>';
+            }
+        }
+
+        // Use escapeHtml from utils
+        const escapeHtml = window.PrashantCooks?.utils?.escapeHtml || function (text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        };
+
+        document.addEventListener('DOMContentLoaded', loadFeaturedRecipes);
+    </script>
+</body>
+
+</html>

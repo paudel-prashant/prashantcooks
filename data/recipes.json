@@ -1,0 +1,196 @@
+{
+    "recipes": [
+        {
+            "id": "chicken-thukpa",
+            "title": "Chicken Thukpa",
+            "image": "chicken-thukpa.jpg",
+            "category": [
+                "Nepali",
+                "Noodles"
+            ],
+            "difficulty": "Easy",
+            "time": "30 minutes",
+            "ingredients": [
+                "200g chicken breast, sliced",
+                "200g noodles (any type)",
+                "1 onion, sliced",
+                "2 tomatoes, chopped",
+                "3-4 cloves garlic, minced",
+                "1 inch ginger, grated",
+                "2 green chilies, sliced",
+                "1 tsp turmeric powder",
+                "1 tsp cumin powder",
+                "1 tsp coriander powder",
+                "Salt to taste",
+                "2 tbsp cooking oil",
+                "4 cups chicken or vegetable broth",
+                "Fresh cilantro for garnish",
+                "Lime wedges for serving"
+            ],
+            "steps": [
+                "Heat oil in a large pot over medium heat. Add sliced onions and sauté until translucent.",
+                "Add minced garlic, grated ginger, and green chilies. Sauté for 1-2 minutes until fragrant.",
+                "Add turmeric, cumin, and coriander powder. Stir well.",
+                "Add chicken slices and cook until they turn white, about 5-6 minutes.",
+                "Add chopped tomatoes and cook until they soften, about 3-4 minutes.",
+                "Pour in the broth and bring to a boil. Reduce heat and simmer for 10 minutes.",
+                "Add noodles and cook according to package instructions (usually 5-7 minutes).",
+                "Season with salt to taste. Garnish with fresh cilantro.",
+                "Serve hot with lime wedges on the side."
+            ],
+            "youtube": "",
+            "description": "A comforting Nepali noodle soup with tender chicken, aromatic spices, and fresh herbs. Perfect for a quick and satisfying meal.",
+            "nutrition": "Calories: 450 | Protein: 28g | Carbs: 45g | Fat: 15g"
+        },
+        {
+            "id": "chicken-keema-noodles",
+            "title": "Chicken Keema Noodles",
+            "image": "chicken-keema-noodles.jpg",
+            "category": [
+                "Nepali",
+                "Noodles"
+            ],
+            "difficulty": "Medium",
+            "time": "25 minutes",
+            "ingredients": [
+                "250g ground chicken (keema)",
+                "200g noodles",
+                "1 onion, finely chopped",
+                "2 tomatoes, finely chopped",
+                "3-4 cloves garlic, minced",
+                "1 inch ginger, grated",
+                "2 green chilies, chopped",
+                "1 tsp garam masala",
+                "1 tsp red chili powder",
+                "1/2 tsp turmeric powder",
+                "1 tsp cumin seeds",
+                "Salt to taste",
+                "2 tbsp cooking oil",
+                "Fresh cilantro for garnish",
+                "Lime wedges"
+            ],
+            "steps": [
+                "Heat oil in a large pan. Add cumin seeds and let them splutter.",
+                "Add chopped onions and sauté until golden brown.",
+                "Add garlic, ginger, and green chilies. Cook for 1 minute.",
+                "Add ground chicken and break it up with a spoon. Cook until browned, about 5-6 minutes.",
+                "Add turmeric, red chili powder, and garam masala. Mix well.",
+                "Add chopped tomatoes and cook until they break down, about 4-5 minutes.",
+                "Meanwhile, cook noodles according to package instructions. Drain and set aside.",
+                "Add cooked noodles to the chicken mixture. Toss everything together.",
+                "Season with salt. Garnish with fresh cilantro and serve with lime wedges."
+            ],
+            "youtube": "",
+            "description": "Spicy and flavorful Nepali-style chicken keema noodles. A quick stir-fry that's packed with aromatic spices and tender ground chicken.",
+            "nutrition": "Calories: 520 | Protein: 32g | Carbs: 48g | Fat: 18g"
+        },
+        {
+            "id": "avocado-toast-egg",
+            "title": "Avocado Toast with Egg",
+            "image": "avocado-toast-egg.jpg",
+            "category": [
+                "Breakfast",
+                "Healthy"
+            ],
+            "difficulty": "Easy",
+            "time": "10 minutes",
+            "ingredients": [
+                "2 slices sourdough bread",
+                "1 ripe avocado",
+                "2 eggs",
+                "1 tbsp olive oil",
+                "Salt and black pepper to taste",
+                "Red pepper flakes (optional)",
+                "Fresh lemon juice",
+                "Fresh chives or microgreens for garnish"
+            ],
+            "steps": [
+                "Toast the bread slices until golden and crispy.",
+                "Cut the avocado in half, remove the pit, and scoop out the flesh into a bowl.",
+                "Mash the avocado with a fork. Add lemon juice, salt, and pepper. Mix well.",
+                "Heat olive oil in a non-stick pan over medium heat.",
+                "Crack the eggs into the pan and cook to your preference (sunny-side up or over-easy).",
+                "Spread the mashed avocado evenly on the toasted bread.",
+                "Place the cooked egg on top of the avocado toast.",
+                "Season with additional salt, pepper, and red pepper flakes if desired.",
+                "Garnish with fresh chives or microgreens and serve immediately."
+            ],
+            "youtube": "",
+            "description": "A simple yet delicious breakfast classic. Creamy avocado paired with a perfectly cooked egg on crispy toast.",
+            "nutrition": "Calories: 380 | Protein: 16g | Carbs: 28g | Fat: 24g"
+        },
+        {
+            "id": "homemade-chilli-oil",
+            "title": "Homemade Chilli Oil",
+            "image": "homemade-chilli-oil.jpg",
+            "category": [
+                "Condiment",
+                "Asian"
+            ],
+            "difficulty": "Easy",
+            "time": "15 minutes",
+            "ingredients": [
+                "1 cup neutral oil (vegetable or canola)",
+                "3-4 tbsp red chili flakes",
+                "2 tbsp Sichuan peppercorns (optional)",
+                "3-4 cloves garlic, thinly sliced",
+                "1 inch ginger, julienned",
+                "1 star anise (optional)",
+                "1 cinnamon stick (optional)",
+                "1 tsp salt",
+                "1 tsp sesame seeds"
+            ],
+            "steps": [
+                "In a heatproof bowl, combine red chili flakes, Sichuan peppercorns, salt, and sesame seeds.",
+                "Heat the oil in a saucepan over medium-low heat. Add garlic, ginger, star anise, and cinnamon stick.",
+                "Cook gently for 5-7 minutes until the garlic and ginger are golden but not burnt.",
+                "Remove the whole spices (star anise, cinnamon) from the oil.",
+                "Carefully pour the hot oil over the chili flake mixture. It should sizzle and bubble.",
+                "Stir well and let it cool completely.",
+                "Transfer to a clean jar and store in the refrigerator. It will keep for several weeks.",
+                "Use as a condiment for noodles, dumplings, rice, or any dish that needs a spicy kick."
+            ],
+            "youtube": "",
+            "description": "A versatile and aromatic chili oil that adds heat and flavor to any dish. Easy to make and stores well.",
+            "nutrition": "Calories: 120 per tbsp | Fat: 14g | Sodium: 200mg"
+        },
+        {
+            "id": "palpali-chukauni",
+            "title": "Palpali Chukauni",
+            "image": "palpali-chukauni.jpg",
+            "category": [
+                "Nepali",
+                "Side Dish"
+            ],
+            "difficulty": "Easy",
+            "time": "20 minutes",
+            "ingredients": [
+                "500g boiled potatoes, cubed",
+                "1 cup thick yogurt",
+                "1 onion, finely chopped",
+                "2-3 green chilies, finely chopped",
+                "1 tbsp mustard oil",
+                "1 tsp fenugreek seeds",
+                "1/2 tsp turmeric powder",
+                "1/2 tsp red chili powder",
+                "Salt to taste",
+                "Fresh cilantro, chopped",
+                "Lime juice to taste"
+            ],
+            "steps": [
+                "Boil potatoes until tender. Let them cool, then cube them.",
+                "Heat mustard oil in a small pan. Add fenugreek seeds and let them splutter.",
+                "Add turmeric and red chili powder. Remove from heat immediately.",
+                "In a mixing bowl, combine cubed potatoes, chopped onion, and green chilies.",
+                "Add the spiced oil mixture and mix well.",
+                "Add thick yogurt and mix gently until everything is well combined.",
+                "Season with salt and add lime juice to taste.",
+                "Garnish with fresh cilantro and serve chilled or at room temperature.",
+                "This dish pairs perfectly with rice, roti, or as a side with any Nepali meal."
+            ],
+            "youtube": "",
+            "description": "A tangy and refreshing Nepali potato salad from the Palpa region. Cool yogurt, spicy chilies, and aromatic fenugreek create a perfect balance.",
+            "nutrition": "Calories: 180 | Protein: 6g | Carbs: 28g | Fat: 5g"
+        }
+    ]
+}

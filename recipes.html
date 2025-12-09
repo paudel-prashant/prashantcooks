@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse all recipes from Prashant Cooks. Filter by category, difficulty, or search for your favorite dish.">
+    <meta name="keywords" content="recipes, cooking, Nepali food, food blog, recipe collection">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/prashant-cooks-web/recipes.html">
+    <meta property="og:title" content="All Recipes | Prashant Cooks">
+    <meta property="og:description" content="Browse all recipes from Prashant Cooks">
+    <meta property="og:image" content="https://yourusername.github.io/prashant-cooks-web/assets/images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://yourusername.github.io/prashant-cooks-web/recipes.html">
+    <meta property="twitter:title" content="All Recipes | Prashant Cooks">
+    <meta property="twitter:description" content="Browse all recipes from Prashant Cooks">
+    <meta property="twitter:image"
+        content="https://yourusername.github.io/prashant-cooks-web/assets/images/og-image.jpg">
+
+    <title>All Recipes | Prashant Cooks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/assets/images/lg-prashant-cooks.png">
+    <link rel="apple-touch-icon" href="/assets/images/lg-prashant-cooks.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="/assets/images/lg-prashant-cooks.png" alt="Prashant Cooks Logo">
+                <span>Prashant Cooks</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu"><span
+                    class="material-icons">menu</span></button>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/recipes.html">Recipes</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="section-header">
+                <h1>All Recipes</h1>
+                <p>Browse our complete collection of delicious recipes</p>
+            </div>
+
+            <div class="search-filters">
+                <div class="search-box-wrapper">
+                    <span class="material-icons">search</span>
+                    <input type="text" class="search-box"
+                        placeholder="Search recipes by name, description, or category..." aria-label="Search recipes">
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-group-label">Categories</div>
+
+                    <button class="filter-btn" data-filter="category" data-value="Nepali">Nepali</button>
+                    <button class="filter-btn" data-filter="category" data-value="Noodles">Noodles</button>
+                    <button class="filter-btn" data-filter="category" data-value="Breakfast">Breakfast</button>
+                    <button class="filter-btn" data-filter="category" data-value="Healthy">Healthy</button>
+                    <button class="filter-btn" data-filter="category" data-value="Condiment">Condiment</button>
+                    <button class="filter-btn" data-filter="category" data-value="Asian">Asian</button>
+                    <button class="filter-btn" data-filter="category" data-value="Side Dish">Side Dish</button>
+                </div>
+
+                <div class="filter-group">
+                    <div class="filter-group-label">Difficulty</div>
+                    <button class="filter-btn" data-filter="difficulty" data-value="Easy">Easy</button>
+                    <button class="filter-btn" data-filter="difficulty" data-value="Medium">Medium</button>
+                    <button class="filter-btn" data-filter="difficulty" data-value="Hard">Hard</button>
+                </div>
+            </div>
+
+            <div class="recipes-grid">
+                <div class="loading">Loading recipes...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Prashant Cooks</h3>
+            <p>Sharing the joy of cooking, one recipe at a time.</p>
+            <div class="social-links">
+                <a href="https://www.youtube.com/@PrashantCooksNP" aria-label="YouTube" target="_blank"
+                    rel="noopener"><span class="material-icons">play_circle</span></a>
+                <a href="https://www.instagram.com/prashantcooksnp/" aria-label="Instagram" target="_blank"
+                    rel="noopener"><span class="material-icons">photo_camera</span></a>
+                <a href="https://www.facebook.com/61583819619360" aria-label="Facebook" target="_blank"
+                    rel="noopener"><span class="material-icons">facebook</span></a>
+                <a href="https://www.tiktok.com/@prashantcooks" aria-label="TikTok" target="_blank" rel="noopener"><span
+                        class="material-icons">music_note</span></a>
+            </div>
+            <div class="footer-links">
+                <a href="/">Home</a>
+                <a href="/recipes.html">Recipes</a>
+                <a href="/about.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Prashant Cooks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/utils.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/recipes.js"></script>
+</body>
+
+</html>
