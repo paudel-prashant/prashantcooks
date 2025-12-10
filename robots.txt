@@ -1,11 +1,11 @@
 # robots.txt for Prashant Cooks
-# https://paudel-prashant.github.io/prashant-cooks-web/
+# https://paudel-prashant.github.io/prashantcooks/
 
 User-agent: *
 Allow: /
 
 # Sitemap location (update with your actual GitHub Pages URL)
-Sitemap: https://paudel-prashant.github.io/prashant-cooks-web/sitemap.xml
+Sitemap: https://paudel-prashant.github.io/prashantcooks/sitemap.xml
 
 # Disallow admin or private areas if any
 # Disallow: /admin/

@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Update the base URL with your actual GitHub Pages URL -->
   <url>
-    <loc>https://paudel-prashant.github.io/prashant-cooks-web/</loc>
+    <loc>https://paudel-prashant.github.io/prashantcooks/</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://paudel-prashant.github.io/prashant-cooks-web/recipes.html</loc>
+    <loc>https://paudel-prashant.github.io/prashantcooks/recipes.html</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://paudel-prashant.github.io/prashant-cooks-web/about.html</loc>
+    <loc>https://paudel-prashant.github.io/prashantcooks/about.html</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://paudel-prashant.github.io/prashant-cooks-web/contact.html</loc>
+    <loc>https://paudel-prashant.github.io/prashantcooks/contact.html</loc>
     <lastmod>2025-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
