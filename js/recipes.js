@@ -44,7 +44,7 @@
         }
 
         grid.innerHTML = filteredRecipes.map(recipe => `
-      <article class="recipe-card" onclick="window.location.href=(window.PrashantCooks?.routing?.getCleanUrl('recipe.html') || 'recipe') + '?id=${recipe.id}'">
+      <article class="recipe-card" onclick="window.location.href='/recipe?id=${recipe.id}'">
         <div class="recipe-card-image-wrapper">
           <img 
             src="assets/images/${recipe.image}" 

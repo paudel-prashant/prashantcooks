@@ -19,6 +19,10 @@
     {
       "source": "/recipe",
       "destination": "/recipe.html"
+    },
+    {
+      "source": "/recipe/:id",
+      "destination": "/recipe.html"
     }
   ],
   "redirects": [
