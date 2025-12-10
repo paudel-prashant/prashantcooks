@@ -21,7 +21,7 @@
         }
 
         try {
-            const response = await fetch('/data/recipes.json');
+            const response = await fetch('data/recipes.json');
             if (!response.ok) {
                 throw new Error('Failed to load recipes');
             }
@@ -63,10 +63,10 @@
         </div>
         ${recipe.image ? `
           <img 
-            src="/assets/images/${recipe.image}" 
+            src="assets/images/${recipe.image}" 
             alt="${escapeHtml(recipe.title)}"
             class="recipe-image"
-            data-src="/assets/images/${recipe.image}"
+            data-src="assets/images/${recipe.image}"
             loading="lazy"
             onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'800\' height=\'400\'%3E%3Crect fill=\'%23ddd\' width=\'800\' height=\'400\'/%3E%3Ctext fill=\'%23999\' font-family=\'sans-serif\' font-size=\'24\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3E${encodeURIComponent(recipe.title)}%3C/text%3E%3C/svg%3E'"
           >
@@ -129,14 +129,14 @@
         // Update or create meta tags
         updateMetaTag('og:title', title);
         updateMetaTag('og:description', recipe.description || '');
-        updateMetaTag('og:image', recipe.image ? `/assets/images/${recipe.image}` : '');
+        updateMetaTag('og:image', recipe.image ? `assets/images/${recipe.image}` : '');
         updateMetaTag('og:url', window.location.href);
         updateMetaTag('og:type', 'article');
         updateMetaTag('description', recipe.description || '');
         updateMetaTag('twitter:card', 'summary_large_image');
         updateMetaTag('twitter:title', title);
         updateMetaTag('twitter:description', recipe.description || '');
-        updateMetaTag('twitter:image', recipe.image ? `/assets/images/${recipe.image}` : '');
+        updateMetaTag('twitter:image', recipe.image ? `assets/images/${recipe.image}` : '');
     }
 
     // Helper to update or create meta tag
@@ -167,7 +167,7 @@
             '@type': 'Recipe',
             name: recipe.title,
             description: recipe.description || '',
-            image: recipe.image ? `/assets/images/${recipe.image}` : '',
+            image: recipe.image ? `assets/images/${recipe.image}` : '',
             prepTime: recipe.time,
             cookTime: recipe.time,
             totalTime: recipe.time,
@@ -226,7 +226,7 @@
         <div class="error-message">
           <h2><span class="material-icons" style="vertical-align: middle; margin-right: 0.5rem;">error_outline</span>Error</h2>
           <p>${escapeHtml(message)}</p>
-          <a href="/recipes.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">
+          <a href="recipes.html" class="btn btn-primary" style="margin-top: 1rem; display: inline-block;">
             <span class="material-icons">arrow_back</span>
             Back to Recipes
           </a>

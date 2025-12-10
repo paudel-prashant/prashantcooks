@@ -27,28 +27,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/assets/images/lg-prashant-cooks.png">
-    <link rel="apple-touch-icon" href="/assets/images/lg-prashant-cooks.png">
+    <link rel="icon" type="image/png" href="assets/images/lg-prashant-cooks.png">
+    <link rel="apple-touch-icon" href="assets/images/lg-prashant-cooks.png">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="/" class="logo">
-                <img src="/assets/images/lg-prashant-cooks.png" alt="Prashant Cooks Logo">
+            <a href="index.html" class="logo">
+                <img src="assets/images/lg-prashant-cooks.png" alt="Prashant Cooks Logo">
                 <span>Prashant Cooks</span>
             </a>
             <button class="mobile-menu-toggle" aria-label="Toggle menu"><span
                     class="material-icons">menu</span></button>
             <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/recipes.html">Recipes</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -57,7 +57,7 @@
         <section class="hero">
             <h1>Welcome to Prashant Cooks</h1>
             <p>Discover delicious recipes from Nepal and around the world. Simple, authentic, and easy to follow.</p>
-            <a href="/recipes.html" class="btn btn-primary" style="display: inline-block; margin-top: 1rem;">Explore
+            <a href="recipes.html" class="btn btn-primary" style="display: inline-block; margin-top: 1rem;">Explore
                 Recipes</a>
         </section>
 
@@ -87,10 +87,10 @@
                         class="material-icons">music_note</span></a>
             </div>
             <div class="footer-links">
-                <a href="/">Home</a>
-                <a href="/recipes.html">Recipes</a>
-                <a href="/about.html">About</a>
-                <a href="/contact.html">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
             </div>
             <div class="footer-copyright">
                 <p>&copy; 2025 Prashant Cooks. All rights reserved.</p>
@@ -98,8 +98,8 @@
         </div>
     </footer>
 
-    <script src="/js/utils.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
     <script>
         // Load featured recipes on homepage
         async function loadFeaturedRecipes() {
@@ -124,13 +124,13 @@
                 }
 
                 grid.innerHTML = featured.map(recipe => `
-          <article class="recipe-card" onclick="window.location.href='/recipe.html?id=${recipe.id}'">
+          <article class="recipe-card" onclick="window.location.href='recipe.html?id=${recipe.id}'">
             <div class="recipe-card-image-wrapper">
               <img 
-                src="/assets/images/${recipe.image}" 
+                src="assets/images/${recipe.image}" 
                 alt="${recipe.title}"
                 class="recipe-card-image"
-                data-src="/assets/images/${recipe.image}"
+                data-src="assets/images/${recipe.image}"
                 loading="lazy"
                 onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'200\'%3E%3Crect fill=\'%23ddd\' width=\'400\' height=\'200\'/%3E%3Ctext fill=\'%23999\' font-family=\'sans-serif\' font-size=\'18\' x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\'%3E${encodeURIComponent(recipe.title)}%3C/text%3E%3C/svg%3E'"
               >
