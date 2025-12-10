@@ -52,7 +52,7 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    line-height: 1.7;
+    line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-light);
     -webkit-font-smoothing: antialiased;
@@ -150,12 +150,8 @@ nav {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary-color);
     display: flex;
     align-items: center;
-    gap: 0.75rem;
     transition: var(--transition);
 }
 
@@ -164,7 +160,7 @@ nav {
 }
 
 .logo img {
-    height: 45px;
+    height: 50px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
@@ -272,7 +268,7 @@ footer a::after {
     font-size: clamp(1.1rem, 2.5vw, 1.35rem);
     max-width: 700px;
     margin: 0 auto 2.5rem;
-    line-height: 1.8;
+    line-height: 1.6;
     position: relative;
     z-index: 1;
     animation: fadeInUp 0.8s ease-out 0.2s both;
@@ -609,7 +605,7 @@ footer a::after {
     font-size: 0.95rem;
     margin-bottom: 1.5rem;
     flex-grow: 1;
-    line-height: 1.7;
+    line-height: 1.6;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
@@ -793,7 +789,7 @@ footer a::after {
     padding-left: 3.5rem;
     position: relative;
     color: var(--text-light);
-    line-height: 1.8;
+    line-height: 1.6;
     transition: var(--transition-fast);
 }
 
@@ -982,7 +978,7 @@ footer::after {
     color: white;
     font-size: 0.85rem;
     margin-bottom: 0.75rem;
-    line-height: 1.4;
+    line-height: 1.6;
 }
 
 .social-links {
@@ -1097,7 +1093,7 @@ footer a:not(.social-links a)::after {
     border-top: none;
     color: white;
     font-size: 12px;
-    line-height: 1.3;
+    line-height: 1.6;
 }
 
 .footer-copyright p {
