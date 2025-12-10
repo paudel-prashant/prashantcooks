@@ -78,13 +78,17 @@
                 const isKnownPage = knownPages.some(page => href.startsWith(page));
                 
                 if (isKnownPage) {
-                    // Use base path
-                    const pathWithoutSlash = href.replace(/^\/+/, '').replace(/\.html$/, '');
-                    if (pathWithoutSlash === '' || pathWithoutSlash === 'index') {
-                        link.setAttribute('href', basePath);
-                    } else {
-                        link.setAttribute('href', basePath + pathWithoutSlash);
+                    // Only modify if we have a base path (GitHub Pages project site)
+                    // On Vercel or user sites, basePath will be '/' so don't modify
+                    if (basePath && basePath !== '/') {
+                        const pathWithoutSlash = href.replace(/^\/+/, '').replace(/\.html$/, '');
+                        if (pathWithoutSlash === '' || pathWithoutSlash === 'index') {
+                            link.setAttribute('href', basePath);
+                        } else {
+                            link.setAttribute('href', basePath + pathWithoutSlash);
+                        }
                     }
+                    // If basePath is '/', keep the absolute path as-is
                     link.dataset.routed = 'true';
                 }
             }
