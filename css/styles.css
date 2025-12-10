@@ -1290,7 +1290,7 @@ footer a:not(.social-links a)::after {
     }
 
     .recipe-image {
-        height: 300px;
+        max-height: 400px;
     }
 
     .recipe-card-image-wrapper {
