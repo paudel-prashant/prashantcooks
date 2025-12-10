@@ -96,7 +96,8 @@ h4 {
 p {
     margin-bottom: 1rem;
     color: var(--text-light);
-    font-size: 0.6rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
 }
 
 a {
